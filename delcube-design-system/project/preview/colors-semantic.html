@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Semantic colors</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { padding: 24px; }
+  .rows { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .swatch { border-radius: var(--r-md); overflow: hidden; border: 1px solid var(--border-1); }
+  .chip { height: 90px; display: flex; align-items: flex-end; padding: 10px 12px; }
+  .chip .n { font-family: 'Space Grotesk', sans-serif; font-size: 18px; font-weight: 700; letter-spacing: -0.02em; }
+  .meta { padding: 10px 12px; background: #fff; }
+  .hex { font-family: var(--ff-mono); font-size: 11px; color: var(--fg-3); }
+  .desc { font-size: 12px; color: var(--fg-2); margin-top: 3px; }
+
+  .success .chip { background: #16C172; color: #062614; }
+  .warn    .chip { background: #FF8A00; color: #2A1600; }
+  .danger  .chip { background: #FF3D3D; color: #2A0606; }
+</style>
+</head><body>
+<div class="card">
+  <div class="rows">
+    <div class="swatch success">
+      <div class="chip"><span class="n">Success</span></div>
+      <div class="meta"><div class="hex">#16C172</div><div class="desc">Order placed · saved</div></div>
+    </div>
+    <div class="swatch warn">
+      <div class="chip"><span class="n">Warning</span></div>
+      <div class="meta"><div class="hex">#FF8A00</div><div class="desc">Almost sold out</div></div>
+    </div>
+    <div class="swatch danger">
+      <div class="chip"><span class="n">Danger</span></div>
+      <div class="meta"><div class="hex">#FF3D3D</div><div class="desc">Ausverkauft · error</div></div>
+    </div>
+  </div>
+</div>
+</body></html>

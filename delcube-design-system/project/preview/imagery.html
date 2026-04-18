@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Imagery</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { padding: 0; }
+  .grid11 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; }
+  .tile { aspect-ratio: 1/1.05; background: #111 center/cover no-repeat; position: relative; }
+  .t1 { background-image: url('../assets/product-red-bear.webp'); background-color: #fff; }
+  .t2 { background-image: url('../assets/product-solo-bear.webp'); }
+  .t3 { background-image: url('../assets/product-cryptooze.webp'); background-color: #fff; }
+  .cap { position: absolute; bottom: 10px; left: 12px; font-size: 10px; font-weight: 600; color: #fff; background: rgba(10,10,10,0.6); padding: 3px 8px; border-radius: 999px; backdrop-filter: blur(4px); }
+  .t1 .cap { background: rgba(10,10,10,0.8); color: #fff; }
+</style>
+</head><body>
+<div class="card">
+  <div class="grid11">
+    <div class="tile t1"><span class="cap">Studio · pure white</span></div>
+    <div class="tile t2"><span class="cap">Editorial · gallery</span></div>
+    <div class="tile t3"><span class="cap">Character · pure white</span></div>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Voice examples</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { padding: 26px 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .col2 { display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; border-radius: 12px; }
+  .ok { background: #fff; border: 1px solid var(--border-1); }
+  .bad { background: #FAFAFA; border: 1px dashed var(--border-2); opacity: 0.9; }
+  .h { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; color: var(--fg-3); }
+  .ok .h { color: #1F7A3A; }
+  .bad .h { color: #C0362C; }
+  .ex { font-size: 14px; color: var(--fg-1); line-height: 1.5; }
+  .bad .ex { color: var(--fg-2); text-decoration: line-through; text-decoration-color: #C0362C; text-decoration-thickness: 1.5px; }
+</style>
+</head><body>
+<div class="card">
+  <div class="col2 ok">
+    <div class="h">✓ DO</div>
+    <div class="ex">Dekoration mit deinem persönlichen Touch.</div>
+    <div class="ex">Handgefertigt. Nummeriert. Signiert.</div>
+    <div class="ex">Edition 12 / 50</div>
+    <div class="ex">Designer: Janis Langer</div>
+  </div>
+  <div class="col2 bad">
+    <div class="h">✗ DON'T</div>
+    <div class="ex">🔥 EXCLUSIVE DROP — BUY NOW! 🔥</div>
+    <div class="ex">Our AMAZING handcrafted masterpieces!!</div>
+    <div class="ex">LIMITED EDITION</div>
+    <div class="ex">By our talented in-house team</div>
+  </div>
+</div>
+</body></html>

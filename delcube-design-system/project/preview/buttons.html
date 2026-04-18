@@ -1,0 +1,37 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Buttons</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { padding: 24px 28px; display: flex; flex-direction: column; gap: 16px; }
+  .row6 { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .l { font-size: 11px; font-weight: 600; color: var(--fg-3); letter-spacing: 0.02em; width: 88px; }
+  button { font-family: var(--ff-sans); font-size: 14px; font-weight: 600; border: 0; cursor: pointer; border-radius: 999px; padding: 12px 24px; display: inline-flex; align-items: center; gap: 8px; transition: background 120ms, color 120ms, transform 120ms; }
+  button:active { transform: scale(0.98); }
+  .primary { background: var(--dc-black); color: #fff; }
+  .primary:hover { background: #262626; }
+  .accent { background: var(--dc-yellow); color: #0A0A0A; }
+  .accent:hover { background: #F5D200; }
+  .secondary { background: #fff; color: var(--dc-black); box-shadow: inset 0 0 0 1.5px #0A0A0A; }
+  .secondary:hover { background: #F4F4F4; }
+  .ghost { background: transparent; color: var(--dc-black); }
+  .ghost:hover { background: #F4F4F4; }
+  .sm { padding: 8px 16px; font-size: 12px; }
+  .lg { padding: 14px 28px; font-size: 15px; }
+</style>
+</head><body>
+<div class="card">
+  <div class="row6">
+    <span class="l">PRIMARY</span>
+    <button class="primary">jetzt entdecken</button>
+    <button class="accent">Custom anfragen</button>
+    <button class="secondary">Mehr erfahren</button>
+    <button class="ghost">Abbrechen</button>
+  </div>
+  <div class="row6">
+    <span class="l">SIZES</span>
+    <button class="primary sm">Small</button>
+    <button class="primary">Medium</button>
+    <button class="primary lg">Large</button>
+  </div>
+</div>
+</body></html>

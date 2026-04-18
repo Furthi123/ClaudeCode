@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Form inputs</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { padding: 24px 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 20px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  label { font-size: 12px; font-weight: 600; color: var(--fg-2); }
+  input, textarea, select {
+    font-family: var(--ff-sans); font-size: 15px; color: var(--fg-1);
+    border: 1px solid var(--border-1); border-radius: 10px; padding: 11px 14px; background: #fff;
+    outline: none; transition: border-color 120ms, box-shadow 120ms;
+  }
+  input:focus { border-color: var(--dc-black); box-shadow: 0 0 0 3px rgba(255,219,0,0.45); }
+  input.err { border-color: #C0362C; }
+  .hint { font-size: 12px; color: var(--fg-3); }
+  .err-msg { font-size: 12px; color: #C0362C; font-weight: 500; }
+  .check { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--fg-1); }
+  .box { width: 18px; height: 18px; border-radius: 6px; background: #0A0A0A; display: inline-flex; align-items: center; justify-content: center; }
+  .box svg { color: #FFDB00; }
+</style>
+</head><body>
+<div class="card">
+  <div class="field">
+    <label>Name</label>
+    <input placeholder="Janis Langer" value="Janis Langer">
+    <span class="hint">Wird auf der Figur eingraviert.</span>
+  </div>
+  <div class="field">
+    <label>Idee / Wort</label>
+    <input placeholder="z. B. RED, BLU, HOME">
+    <span class="hint">1–6 Zeichen.</span>
+  </div>
+  <div class="field">
+    <label>E-Mail</label>
+    <input class="err" value="janis@delcube">
+    <span class="err-msg">Ungültige E-Mail-Adresse.</span>
+  </div>
+  <div class="field">
+    <label>Edition</label>
+    <select><option>Standard (50 Stück)</option><option>Mini-Drop (10 Stück)</option></select>
+  </div>
+  <div class="field" style="grid-column: 1 / -1">
+    <div class="check">
+      <span class="box"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+      Ich akzeptiere die AGB und Datenschutzbestimmungen.
+    </div>
+  </div>
+</div>
+</body></html>

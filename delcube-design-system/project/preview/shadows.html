@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Shadows</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { padding: 40px 28px; background: var(--bg-sunken); }
+  .row5 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .box { height: 100px; background: #fff; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-family: var(--ff-mono); font-size: 11px; color: var(--fg-3); }
+  .cap { text-align: center; margin-top: 12px; font-size: 12px; font-weight: 600; color: var(--fg-1); }
+  .sub { text-align: center; font-family: var(--ff-mono); font-size: 11px; color: var(--fg-3); margin-top: 2px; }
+  .s1 { box-shadow: 0 1px 2px rgba(10,10,10,0.04), 0 1px 1px rgba(10,10,10,0.03); }
+  .s2 { box-shadow: 0 4px 12px rgba(10,10,10,0.06), 0 1px 2px rgba(10,10,10,0.04); }
+  .s3 { box-shadow: 0 12px 32px rgba(10,10,10,0.08), 0 2px 4px rgba(10,10,10,0.04); }
+</style>
+</head><body>
+<div class="card">
+  <div class="row5">
+    <div><div class="box s1">shadow-1</div><div class="cap">shadow-1</div><div class="sub">inputs · chips</div></div>
+    <div><div class="box s2">shadow-2</div><div class="cap">shadow-2</div><div class="sub">default card</div></div>
+    <div><div class="box s3">shadow-3</div><div class="cap">shadow-3</div><div class="sub">popover · modal</div></div>
+  </div>
+</div>
+</body></html>

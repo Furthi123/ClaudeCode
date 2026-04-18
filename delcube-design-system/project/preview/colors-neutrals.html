@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Neutral scale</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { padding: 24px; }
+  .scale { display: grid; grid-template-columns: repeat(10, 1fr); border-radius: var(--r-md); overflow: hidden; border: 1px solid var(--border-1); }
+  .cell { height: 72px; display: flex; align-items: flex-end; justify-content: center; padding: 6px 4px; font-family: var(--ff-mono); font-size: 10px; }
+  .labels { display: grid; grid-template-columns: repeat(10, 1fr); margin-top: 10px; }
+  .labels div { text-align: center; font-size: 11px; color: var(--fg-3); font-weight: 500; }
+</style>
+</head><body>
+<div class="card">
+  <div class="scale">
+    <div class="cell" style="background:#FAFAFA; color:#4A4A4A">50</div>
+    <div class="cell" style="background:#F4F4F4; color:#4A4A4A">100</div>
+    <div class="cell" style="background:#E7E7E7; color:#4A4A4A">200</div>
+    <div class="cell" style="background:#D1D1D1; color:#2E2E2E">300</div>
+    <div class="cell" style="background:#9E9E9E; color:#fff">400</div>
+    <div class="cell" style="background:#6B6B6B; color:#fff">500</div>
+    <div class="cell" style="background:#4A4A4A; color:#fff">600</div>
+    <div class="cell" style="background:#2E2E2E; color:#fff">700</div>
+    <div class="cell" style="background:#1A1A1A; color:#fff">800</div>
+    <div class="cell" style="background:#0A0A0A; color:#fff">900</div>
+  </div>
+  <div class="labels">
+    <div>#FAFAFA</div><div>#F4F4F4</div><div>#E7E7E7</div><div>#D1D1D1</div><div>#9E9E9E</div>
+    <div>#6B6B6B</div><div>#4A4A4A</div><div>#2E2E2E</div><div>#1A1A1A</div><div>#0A0A0A</div>
+  </div>
+</div>
+</body></html>

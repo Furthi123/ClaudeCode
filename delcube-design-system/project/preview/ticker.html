@@ -1,0 +1,27 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Marquee ticker</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  body { background: #fff; }
+  .wrap { padding: 24px; }
+  .ticker { position: relative; background: #0A0A0A; border-radius: 20px; overflow: hidden; padding: 22px 0; color: #fff; }
+  .ticker::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 12px; background: linear-gradient(90deg, transparent 0%, #FFDB00 30%, #FFDB00 70%, transparent 100%); }
+  .track { display: flex; gap: 56px; font-family: 'Poppins', sans-serif; font-weight: 900; font-size: 32px; letter-spacing: -0.03em; white-space: nowrap; animation: scroll 18s linear infinite; padding-top: 6px; }
+  .track span { display: inline-flex; align-items: center; gap: 56px; }
+  .track span::after { content: '★'; color: #FFDB00; font-size: 22px; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+</style>
+</head><body>
+<div class="wrap">
+  <div class="ticker">
+    <div class="track">
+      <span>Einmalige Designs</span>
+      <span>Handgefertigt</span>
+      <span>Made in Germany</span>
+      <span>Einmalige Designs</span>
+      <span>Handgefertigt</span>
+      <span>Made in Germany</span>
+    </div>
+  </div>
+</div>
+</body></html>

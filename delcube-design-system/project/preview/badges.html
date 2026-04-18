@@ -1,0 +1,35 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Badges & tags</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { padding: 24px 28px; display: flex; flex-direction: column; gap: 16px; }
+  .row7 { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .l { font-size: 11px; font-weight: 600; color: var(--fg-3); letter-spacing: 0.02em; width: 100px; flex-shrink: 0; }
+  .tag { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px; font-size: 13px; font-weight: 500; border: 1px solid var(--border-1); background: #fff; color: var(--fg-1); }
+  .tag.solid { background: #0A0A0A; color: #fff; border-color: #0A0A0A; }
+  .tag.accent { background: #FFDB00; color: #0A0A0A; border-color: #FFDB00; font-weight: 600; }
+  .tag.outline-red { background: #fff; color: #C0362C; border: 1.5px solid #C0362C; }
+  .tag.dot::before { content: ''; width: 6px; height: 6px; border-radius: 999px; background: currentColor; }
+  .tag.success.dot::before { background: #1F7A3A; }
+  .tag.warn.dot::before    { background: #B67200; }
+  .tag.danger.dot::before  { background: #C0362C; }
+</style>
+</head><body>
+<div class="card">
+  <div class="row7">
+    <span class="l">PRODUKT-TAGS</span>
+    <span class="tag">Handgefertigt</span>
+    <span class="tag">Made in Germany</span>
+    <span class="tag accent">Neu</span>
+    <span class="tag outline-red">Nur 3 übrig</span>
+    <span class="tag solid">Limited · 50</span>
+  </div>
+  <div class="row7">
+    <span class="l">STATUS</span>
+    <span class="tag dot success">Auf Lager</span>
+    <span class="tag dot warn">Nur noch wenige</span>
+    <span class="tag dot danger">Ausverkauft</span>
+    <span class="tag">Edition 12 / 50</span>
+  </div>
+</div>
+</body></html>

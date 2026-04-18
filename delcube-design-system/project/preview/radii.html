@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Radii</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .card { padding: 28px; }
+  .row4 { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+  .b { height: 88px; background: var(--dc-n-100); border: 1px solid var(--border-1); display: flex; align-items: center; justify-content: center; font-family: var(--ff-mono); font-size: 11px; color: var(--fg-3); }
+  .cap { text-align: center; margin-top: 8px; font-size: 12px; font-weight: 600; color: var(--fg-1); }
+  .sub { text-align: center; font-family: var(--ff-mono); font-size: 11px; color: var(--fg-3); }
+</style>
+</head><body>
+<div class="card">
+  <div class="row4">
+    <div><div class="b" style="border-radius:6px">6</div><div class="cap">xs</div><div class="sub">chip inner</div></div>
+    <div><div class="b" style="border-radius:10px">10</div><div class="cap">sm</div><div class="sub">button · input</div></div>
+    <div><div class="b" style="border-radius:12px; background:var(--dc-yellow); border:0">12</div><div class="cap">md · default</div><div class="sub">card · panel</div></div>
+    <div><div class="b" style="border-radius:20px">20</div><div class="cap">lg</div><div class="sub">modal · media</div></div>
+    <div><div class="b" style="border-radius:32px">32</div><div class="cap">xl</div><div class="sub">hero card</div></div>
+    <div><div class="b" style="border-radius:999px">∞</div><div class="cap">pill</div><div class="sub">tag · badge</div></div>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,4 @@
+@import url('../colors_and_type.css');
+html, body { margin: 0; padding: 0; background: #fff; color: var(--fg-1); font-family: var(--ff-sans); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { width: 700px; }

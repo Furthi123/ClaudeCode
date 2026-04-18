@@ -1,0 +1,213 @@
+/* =========================================================================
+   Delcube Design System — Colors & Type
+   Professional black/white + single accent (#FFDB00). DM Sans typography.
+   ========================================================================= */
+
+/* Type pairing:
+   — Poppins Black (display): geometric, heavy, confident — used for all headlines
+   — DM Sans (UI/body): clean, neutral, readable at small sizes
+   No mono family — DM Sans with tabular-nums covers editions/SKUs. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+:root {
+  /* ---------- Brand ---------- */
+  --dc-black:        #0A0A0A;   /* near-black, used as primary fg on light */
+  --dc-ink:          #111111;   /* body copy on white */
+  --dc-white:        #FFFFFF;
+  --dc-yellow:       #FFDB00;   /* THE accent. Use sparingly. */
+  --dc-yellow-ink:   #0A0A0A;   /* fg color on yellow surfaces */
+
+  /* ---------- Neutrals (warm-cool balanced grey scale) ---------- */
+  --dc-n-50:  #FAFAFA;
+  --dc-n-100: #F4F4F4;
+  --dc-n-200: #E7E7E7;
+  --dc-n-300: #D1D1D1;
+  --dc-n-400: #9E9E9E;
+  --dc-n-500: #6B6B6B;
+  --dc-n-600: #4A4A4A;
+  --dc-n-700: #2E2E2E;
+  --dc-n-800: #1A1A1A;
+  --dc-n-900: #0A0A0A;
+
+  /* ---------- Semantic foreground / background ---------- */
+  --fg-1: var(--dc-ink);        /* primary body */
+  --fg-2: var(--dc-n-600);      /* secondary / supporting */
+  --fg-3: var(--dc-n-500);      /* tertiary / meta */
+  --fg-muted: var(--dc-n-400);  /* hints, placeholders */
+  --fg-on-accent: var(--dc-black);
+  --fg-on-dark: var(--dc-white);
+
+  --bg-page:      var(--dc-white);
+  --bg-surface:   var(--dc-white);
+  --bg-sunken:    var(--dc-n-50);
+  --bg-subtle:    var(--dc-n-100);
+  --bg-dark:      var(--dc-black);
+  --bg-accent:    var(--dc-yellow);
+
+  /* ---------- Borders ---------- */
+  --border-1: var(--dc-n-200);  /* default hairline */
+  --border-2: var(--dc-n-300);  /* emphasized */
+  --border-strong: var(--dc-n-900);
+  --border-on-dark: rgba(255,255,255,0.10);
+
+  /* ---------- Semantic status (kept muted; only one accent in the brand) ---------- */
+  --status-success: #16C172;
+  --status-warn:    #FF8A00;
+  --status-danger:  #FF3D3D;
+
+  /* ---------- Type stacks ---------- */
+  --ff-sans: 'DM Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ff-mono: 'DM Sans', ui-monospace, 'SF Mono', Menlo, monospace;
+  --ff-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+
+  /* ---------- Type sizes (rem, 1rem = 16px) ---------- */
+  --fs-display-xl: 4.5rem;   /* 72 — hero on web */
+  --fs-display-lg: 3.5rem;   /* 56 */
+  --fs-display-md: 2.75rem;  /* 44 */
+  --fs-h1: 2.25rem;          /* 36 */
+  --fs-h2: 1.75rem;          /* 28 */
+  --fs-h3: 1.375rem;         /* 22 */
+  --fs-h4: 1.125rem;         /* 18 */
+  --fs-body-lg: 1.125rem;    /* 18 */
+  --fs-body:    1rem;        /* 16 */
+  --fs-body-sm: 0.9375rem;   /* 15 */
+  --fs-meta:    0.8125rem;   /* 13 */
+  --fs-micro:   0.75rem;     /* 12 */
+
+  /* ---------- Line heights ---------- */
+  --lh-tight: 1.05;
+  --lh-snug:  1.2;
+  --lh-normal: 1.4;
+  --lh-relaxed: 1.6;
+
+  /* ---------- Weights ---------- */
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-black:    900;
+
+  /* ---------- Letter spacing (generally none — DM Sans reads best natural) ---------- */
+  --tracking-tight: -0.02em;
+  --tracking-snug:  -0.01em;
+  --tracking-0:     0;
+  --tracking-wide:  0.04em;    /* reserved for meta/eyebrow only */
+
+  /* ---------- Spacing scale (4px base) ---------- */
+  --sp-0: 0;
+  --sp-1: 0.25rem;   /* 4 */
+  --sp-2: 0.5rem;    /* 8 */
+  --sp-3: 0.75rem;   /* 12 */
+  --sp-4: 1rem;      /* 16 */
+  --sp-5: 1.5rem;    /* 24 */
+  --sp-6: 2rem;      /* 32 */
+  --sp-7: 3rem;      /* 48 */
+  --sp-8: 4rem;      /* 64 */
+  --sp-9: 6rem;      /* 96 */
+  --sp-10: 8rem;     /* 128 */
+
+  /* ---------- Radii (always rounded — brand signature) ---------- */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 12px;   /* default — use this on most surfaces */
+  --r-lg: 20px;
+  --r-xl: 32px;
+  --r-2xl: 48px;  /* hero cards, large feature blocks */
+  --r-pill: 999px;
+
+  /* ---------- Shadows (subtle, never theatrical) ---------- */
+  --shadow-1: 0 1px 2px rgba(10,10,10,0.04), 0 1px 1px rgba(10,10,10,0.03);
+  --shadow-2: 0 4px 12px rgba(10,10,10,0.06), 0 1px 2px rgba(10,10,10,0.04);
+  --shadow-3: 0 12px 32px rgba(10,10,10,0.08), 0 2px 4px rgba(10,10,10,0.04);
+  --shadow-focus: 0 0 0 3px rgba(255,219,0,0.45);
+  --shadow-focus-dark: 0 0 0 3px rgba(255,219,0,0.55);
+
+  /* ---------- Motion (instant, no theatrics) ---------- */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.25, 1);
+  --dur-fast: 120ms;
+  --dur-base: 180ms;
+  --dur-slow: 260ms;
+
+  /* ---------- Layout ---------- */
+  --container-max: 1280px;
+  --container-pad: clamp(16px, 4vw, 48px);
+  --nav-h: 64px;
+}
+
+/* =========================================================================
+   Semantic type roles — use these classes or compose with vars directly.
+   ========================================================================= */
+
+.dc-display-xl,
+.dc-display-lg,
+.dc-display-md,
+.dc-h1, .dc-h2, .dc-h3, .dc-h4 {
+  font-family: var(--ff-display);
+  color: var(--fg-1);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  text-wrap: balance;
+  margin: 0;
+}
+
+.dc-display-xl { font-size: var(--fs-display-xl); font-weight: var(--fw-bold); }
+.dc-display-lg { font-size: var(--fs-display-lg); font-weight: var(--fw-bold); }
+.dc-display-md { font-size: var(--fs-display-md); font-weight: var(--fw-bold); }
+.dc-h1 { font-size: var(--fs-h1); }
+.dc-h2 { font-size: var(--fs-h2); line-height: var(--lh-snug); }
+.dc-h3 { font-size: var(--fs-h3); line-height: var(--lh-snug); letter-spacing: var(--tracking-snug); }
+.dc-h4 { font-size: var(--fs-h4); line-height: var(--lh-snug); letter-spacing: var(--tracking-snug); font-weight: var(--fw-semibold); }
+
+.dc-body-lg,
+.dc-body,
+.dc-body-sm {
+  font-family: var(--ff-sans);
+  color: var(--fg-1);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-relaxed);
+  letter-spacing: 0;
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.dc-body-lg { font-size: var(--fs-body-lg); }
+.dc-body    { font-size: var(--fs-body); }
+.dc-body-sm { font-size: var(--fs-body-sm); color: var(--fg-2); }
+
+.dc-meta {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-meta);
+  font-weight: var(--fw-medium);
+  color: var(--fg-3);
+  line-height: var(--lh-normal);
+  margin: 0;
+}
+
+.dc-eyebrow {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-meta);
+  font-weight: var(--fw-semibold);
+  color: var(--fg-2);
+  letter-spacing: var(--tracking-0);
+  text-transform: none; /* brand: no uppercase eyebrows */
+  margin: 0 0 var(--sp-3);
+}
+
+.dc-mono {
+  font-family: var(--ff-mono);
+  font-size: var(--fs-meta);
+  color: var(--fg-2);
+  letter-spacing: var(--tracking-0);
+}
+
+.dc-link {
+  color: var(--fg-1);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--dc-yellow);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.dc-link:hover { color: var(--dc-n-600); }
